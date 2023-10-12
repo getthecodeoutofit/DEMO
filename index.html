@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Namaste</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="popup">
+    <img src="front.jpg" alt="Background image">
+    <h1>Namaste!</h1>
+    <menu>
+      <a href="references.html">References</a>
+      <a href="signup.html">Sign up</a>
+      <a href="signin.html">Sign in</a>
+      <a href="about.html">About</a>
+    </menu>
+    <button type="button" onclick="window.location.href='all.html'">Continue to website</button>
+  </div>
+
+  <div id = "uk">
+    <p>
+        Welcome to Uttarakhand: 
+    </p>
+  </div>
+
+  <script>
+    // Open the popup on load
+    window.onload = function() {
+      document.getElementById("popup","uk").style.display = "block";
+    }
+
+    // Close the popup when the user clicks the continue button
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+</body>
+</html>

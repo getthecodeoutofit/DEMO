@@ -1,0 +1,105 @@
+/* CSS for all devices */
+
+#container {
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: linear-gradient(to right, #000000, #c20707);
+    border-radius: 20px;
+  }
+  
+  #container h1 {
+    text-align: center;
+    font-size: 48px;
+    color: white;
+  }
+  
+  #container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+  }
+  
+  #container form {
+    position: relative;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(29, 224, 94, 0.5);
+  }
+  
+  #container input {
+    width: 95%;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+    color: rgb(16, 15, 15);
+    border-radius: 5px;
+  }
+  
+  #container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: rgb(125, 179, 233);
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #container input:focus,
+  #container button:focus {
+    outline: none;
+  }
+  
+  /* CSS for smartphones */
+  
+  @media (max-width: 576px) {
+    #container {
+      width: 100%;
+      margin: 0;
+    }
+  
+    #container form {
+      padding: 10px;
+    }
+  
+    #container input {
+      width: 90%;
+      margin-bottom: 5px;
+    }
+  
+    #container button {
+      width: 90%;
+    }
+  }
+  
+  /* CSS for tablets */
+  
+  @media (min-width: 576px) and (max-width: 768px) {
+    /* CSS for tablets */
+  }
+  
+  /* Input color changes */
+  
+  #container input::placeholder {
+    color: #ccc;
+  }
+  
+  #container input:focus {
+    border: 1px solid #fff;
+  }
+  
+  #container button:hover {
+    background-color: #ccc;
+  }
+  #container a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
